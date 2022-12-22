@@ -1,0 +1,176 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&family=Open+Sans:wght@500&display=swap'); 
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+ 
+}
+
+.header{
+
+   display:block;
+   justify-content: center;
+}
+#success-message{
+    margin: 0;
+    padding-bottom:5px;
+    visibility: hidden;
+}
+.success.success #success-message {
+    color: green;
+    visibility: visible;
+}
+.success.error #success-message {
+    color: red;
+    visibility: visible;
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    width: 50vw;
+    max-width: 100%;
+    margin: 20px 350px 20px 350px;
+ 
+}
+.header{
+    text-align: center;
+  
+padding: 5px 20px;
+}
+.header h2{
+margin: 0;
+}
+.form{
+padding: 5px 30px 19px 30px;
+font-family: inherit;
+
+}
+.form-control{
+    
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 1.2px solid rgb(46, 46, 46);
+    border-radius: 4px;
+    position: absolute;
+    right:50px;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 3px;
+    width: 70%;
+   
+} 
+
+.form-control.success input{
+border-color: #02a302;
+}
+.form-control.error input{
+    border-color: #ff0000;
+    }
+.form-control i{
+    position: absolute;
+    top: 5px;
+    right:25px;
+    visibility: hidden;
+}
+.form-control.form-control.success i.fa-check-circle{
+    color:#02a302 ;
+    visibility: visible;
+}
+.form-control.form-control.error i.fa-exclamation-circle{
+    color:#ff0000;
+    visibility: visible;
+}
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 137px;
+}
+.form-control.error small{
+    color: #ff0000;
+    visibility: visible;
+}
+
+.form button{
+background-color: blue;
+color: white;
+display: flex;
+
+justify-content: center;
+font-family: inherit;
+font-size: 16px;
+border-radius: 4px;
+padding:10px;
+width: 100%;
+}
+
+.container2{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    width: 80vw;
+    max-width: 100%;
+    margin: auto;
+ 
+}
+table{
+
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    background-color: burlywood;
+}
+table,th,td{
+    border: 2px solid black;
+    padding: 10px 10px;
+    font-size: 12px;
+}
+#error-message{
+    text-align: center;
+    background-color: blue; 
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

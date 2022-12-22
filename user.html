@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75ec19d660.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Users</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="success">
+                <h5 id="success-message"></h5>
+            </div>
+         <div class="form-control">
+            <label>First Name*</label>
+            <input type="text" placeholder="Abhinav" id="fname">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+         </div>
+         <div class="form-control">
+            <label>Last Name*</label>
+            <input type="text" placeholder="Goyal" id="lname">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+         </div>
+         <div class="form-control">
+            <label>Username*</label>
+            <input type="text" placeholder="abhi23" id="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+         </div>
+         <div class="form-control">
+            <label>Email*</label>
+            <input type="text" placeholder="example@gmail.com" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+         </div>
+         <div class="form-control">
+            <label>Address*</label>
+            <input type="text" placeholder="Gurgaon,Haryana" id="address">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+         </div>
+         <div class="form-control">
+            <label>Phone*</label>
+            <input type="text" placeholder="024-648-3804" id="phone">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+         </div>
+         <div class="form-control">
+            <label>Website</label>
+            <input type="text" placeholder="www.acciojob.com" id="website">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+         </div>
+         <div class="form-control">
+            <label>Company Name</label>
+            <input type="text" placeholder="AccioJob" id="company">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+         </div>
+         <button id="entry">Submit</button>
+
+        </form>
+    </div>
+    <div class="container2">
+       <h6 id="error-message"></h6>
+       <table class="display" id="display">
+        
+        <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company</th>
+
+        </tr>
+       </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
