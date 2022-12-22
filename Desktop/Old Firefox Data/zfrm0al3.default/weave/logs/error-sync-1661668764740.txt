@@ -1,0 +1,67 @@
+1661668763410	FirefoxAccounts	TRACE	initializing new storage manager
+1661668763410	FirefoxAccounts	TRACE	starting fetch of json user data
+1661668763488	FirefoxAccounts	TRACE	finished fetch of json user data - took: 77
+1661668763489	FirefoxAccounts	DEBUG	reading secure storage with existing: []
+1661668763489	FirefoxAccounts	TRACE	starting fetch of user data from the login manager
+1661668763495	FirefoxAccounts	INFO	Can't find any credentials in the login manager
+1661668763495	FirefoxAccounts	TRACE	initializing of new storage manager done
+1661668763552	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/attached_clients
+1661668763959	Sync.Status	INFO	Resetting Status.
+1661668763959	Sync.Status	DEBUG	Status.service: undefined => success.status_ok
+1661668763970	Sync.SyncScheduler	TRACE	Setting SyncScheduler policy values to defaults.
+1661668763970	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1661668763971	Sync.Service	INFO	Loading Weave 1.106.0
+1661668763973	Sync.Engine.Clients	DEBUG	Engine constructed
+1661668763974	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1661668763988	Sync.Engine.Addons	DEBUG	Engine constructed
+1661668764179	FirefoxAccounts	DEBUG	FxAccountsWebChannel registered: account_updates with origin https://accounts.firefox.com
+1661668764180	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1661668764317	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1661668764338	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1661668764345	Sync.Engine.Forms	DEBUG	Engine constructed
+1661668764349	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1661668764356	Sync.Engine.History	DEBUG	Engine constructed
+1661668764375	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Initialized
+1661668764376	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1661668764376	FirefoxAccounts	DEBUG	getOAuthToken enter
+1661668764511	FirefoxAccounts	INFO	fetching updated device list
+1661668764561	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1661668764569	Sync.Engine.Passwords	DEBUG	Engine constructed
+1661668764624	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices
+1661668764632	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/oauth/token
+1661668764632	Services.Common.RESTRequest	DEBUG	POST Length: 81
+1661668764634	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1661668764639	Sync.Engine.Prefs	DEBUG	Engine constructed
+1661668764652	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1661668764659	Sync.Engine.Tabs	DEBUG	Engine constructed
+1661668764664	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1661668764664	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1661668764670	Sync.Engine.Addresses	DEBUG	Engine constructed
+1661668764688	Sync.Engine.Addresses	DEBUG	SyncEngine initialized: addresses
+1661668764689	Sync.Engine.CreditCards	DEBUG	Engine constructed
+1661668764696	Sync.Engine.CreditCards	DEBUG	SyncEngine initialized: creditcards
+1661668764706	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1661668764710	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1661668764710	Sync.Service	INFO	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:104.0) Gecko/20100101 Firefox/104.0
+1661668764714	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1661668764714	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1661668764715	Sync.Engine.History.Tracker	INFO	Adding Places observer.
+1661668764729	FirefoxAccounts	INFO	Generating and persisting encrypted sendtab keys
+1661668764729	FirefoxAccounts	INFO	Could not find sendtab keys, generating them
+1661668764731	FirefoxAccounts	INFO	Already fetching device list, return existing promise
+1661668764732	Sync.Service	DEBUG	User-Agent: Firefox/104.0 (Windows NT 10.0; Win64; x64) FxSync/1.106.0.20220818191623.desktop
+1661668764732	Sync.Service	INFO	Starting sync at 2022-08-28 12:09:24 in browser session yrcKhNPc_wb5
+1661668764733	Sync.Service	DEBUG	In sync: should login.
+1661668764733	Sync.Service	INFO	User logged in successfully - verifying login.
+1661668764733	FirefoxAccounts	INFO	Can't get keys; no key material or tokens available
+1661668764734	Sync.SyncAuthManager	DEBUG	unlockAndVerifyAuthState: user declined to unlock master-password
+1661668764734	Sync.Status	DEBUG	Status.login: success.login => service.master_password_locked
+1661668764734	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1661668764734	Sync.Service	DEBUG	Fetching unlocked auth state returned service.master_password_locked
+1661668764735	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1661668764735	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1661668764735	Sync.SyncScheduler	DEBUG	Couldn't log in: master password is locked.
+1661668764735	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 900000 ms.
+1661668764735	Sync.SyncScheduler	DEBUG	Next sync in 900000 ms. (why=client-backoff-schedule)
+1661668764738	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: service.master_password_locked(resource://services-sync/service.js:1039:15) JS Stack trace: onNotify@service.js:1039:15
+1661668764739	Sync.Service	DEBUG	Not syncing: login returned false.

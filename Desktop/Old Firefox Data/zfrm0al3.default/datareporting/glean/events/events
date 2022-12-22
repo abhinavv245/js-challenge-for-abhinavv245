@@ -1,0 +1,3 @@
+{"timestamp":0,"category":"nimbus_events","name":"enrollment","extra":{"enrollment_id":"cca8bf1a-a8b5-4b3c-ab80-158cb65b6ddc","branch":"control","experiment_type":"nimbus","experiment":"tcp-rollout-phase-iii-tcp-on-by-default-for-95-existing-release-profiles"}}
+{"timestamp":14,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"total-cookie-protection-roll-out-to-users-phase-ii-switch-on-by-default","reason":"feature-conflict"}}
+{"timestamp":0,"category":"perf","name":"page_load","extra":{"fcp_time":"1818","load_type":"NORMAL","response_time":"1237","js_exec_time":"65","load_time":"2456"}}

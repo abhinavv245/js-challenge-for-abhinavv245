@@ -1,0 +1,10 @@
+﻿<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>Secure Search</ShortName>
+	<Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAwFBMVEUAAAB/gIBdXmBBQUFpamzk5OT////tz9ihAjGhQFm4cIPqs8KiBTPADj2vCjWyNVa0RGKsGD+qCTS8DTumBDTTEkXMhJbCED/LEEKoBTPhwcmJBibMS22oBDPMVnfZPmfDWHO0DDeBgYHY2NneXH76+vqlpaXy8/KxCDjniKL6+fnQoq21CznMwcWxI037+/vIHUutDDe6DjqlDDKVCSycCC2xDjmrBjWpCjKUBym5ubmeBy6dnZ2sFEHAGkiwsbJEw3gaAAAAAXRSTlMAQObYZgAAAAFiS0dEBmFmuH0AAAAHdElNRQfgAgIKGBCYYiciAAAAxUlEQVQY002M2VbCQBBEO92kJjAkRJaIGWQZhAElLmgExeX//4rmqBzvU3WdW00URRGzKMwaiRpxjDNx3CA2SbNlrTHWtpqJYWK006yTX3TzPOslYBL0BwOg6AKXwyvIX1E6YJRea8EYDyf6rwCms7FO/NymNyixKFFkdu5pKWG1hsOtw90myJKIq3urxYND+VgxkSqm/bR9fqndqzkJqnizm+3rt8z4k6DIe+gf6k2ohH6Rj/D5Fb7PN5EXQJj+4Vn8TzoCO7kPLgW7hCsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMDItMDJUMTA6MjQ6MTYtMDU6MDB56fibAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTAyLTAyVDEwOjI0OjE2LTA1OjAwCLRAJwAAAABJRU5ErkJggg==</Image>
+	<Url type="text/html" method="GET" template="https://in.search.yahoo.com/search">
+		<Param name="fr" value="mcafee" />
+		<Param name="type" value="D114IN826G0" />
+		<Param name="p" value="{searchTerms}" />
+	</Url>
+	<Url type="application/x-suggestions+json" method="GET" template="http://ff.search.yahoo.com/gossip?output=fxjson&amp;command={searchTerms}"/>
+</SearchPlugin>
