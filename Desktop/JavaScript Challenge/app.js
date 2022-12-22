@@ -71,7 +71,7 @@ const companyvalue=company.value;
 if(fnamevalue==''){
     setErrorFor(fname,'This field is required.');
 } else if(!isValidname(fnamevalue)){
-    setErrorFor(fname,'Invalid first name. At least 3 characters required (alphaumeric only).');
+    setErrorFor(fname,'Invalid first name. At least 3 characters required (alphanumeric only).');
 }
 else{
    setSuccessFor(fname);
@@ -80,7 +80,7 @@ else{
 if(lnamevalue==''){
     setErrorFor(lname,'This field is required.');
 } else if(!isValidname(lnamevalue)){
-    setErrorFor(lname,'Invalid last name. At least 3 characters required (alphaumeric only).');
+    setErrorFor(lname,'Invalid last name. At least 3 characters required (alphanumeric only).');
 }
 else{
    setSuccessFor(lname);
@@ -120,7 +120,7 @@ else{
 }
 //website
 if(websitevalue==''){
-   
+    setSuccessFor(website);
 }
 else if(!isValidWebsite(websitevalue)){
     setErrorFor(website,'Please enter a valid website link');
