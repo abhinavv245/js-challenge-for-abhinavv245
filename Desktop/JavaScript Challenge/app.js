@@ -31,7 +31,7 @@ fetch("https://jsonplaceholder.typicode.com/users").then(data=>{
         row++;
     })
 }).catch(error=>{
-    const header= document.getElementById('header');
+    const header= document.getElementById('error-message');
     
      header.innerText='Something went wrong while fetching the users.';
 });
@@ -47,12 +47,17 @@ const username= document.getElementById('username');
 const phone= document.getElementById('phone');
 const website= document.getElementById('website');
 const company= document.getElementById('company');
+const successmsg=document.getElementById('success-message');
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
    checkInputs();
    if(validate()==true){
     displayDetails();
+    
+    successmsg.parentElement.className='success success';
+    successmsg.innerText='User details appended successfully to the table.';
+    
    }
 });
 
@@ -139,20 +144,27 @@ else{
 function setErrorFor(input,message){
   const formControl=input.parentElement; //.form-control
   const small=formControl.querySelector('small');
-
+ 
   //add error message
   small.innerText=message;
 
   //add error class
   formControl.className='form-control error';
 
+  
+ const psuccess=successmsg.parentElement;
+ psuccess.className='success error';
+ successmsg.innerText='Please fill out all the required details.';
+
 
 }
 
 function setSuccessFor(input){
     const formControl=input.parentElement; //.form-control
+    
     //add success class
     formControl.className='form-control success';
+   
 
 }
 

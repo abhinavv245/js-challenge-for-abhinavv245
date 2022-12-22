@@ -10,6 +10,24 @@ body{
  
 }
 
+.header{
+
+   display:block;
+   justify-content: center;
+}
+#success-message{
+    margin: 0;
+    padding-bottom:5px;
+    visibility: hidden;
+}
+.success.success #success-message {
+    color: green;
+    visibility: visible;
+}
+.success.error #success-message {
+    color: red;
+    visibility: visible;
+}
 .container{
     background-color: white;
     border-radius: 5px;
@@ -29,7 +47,7 @@ padding: 5px 20px;
 margin: 0;
 }
 .form{
-padding: 19px 30px;
+padding: 5px 30px 19px 30px;
 font-family: inherit;
 
 }
@@ -86,6 +104,7 @@ border-color: #02a302;
     color: #ff0000;
     visibility: visible;
 }
+
 .form button{
 background-color: blue;
 color: white;
@@ -120,7 +139,7 @@ table,th,td{
     padding: 10px 10px;
     font-size: 12px;
 }
-#header{
+#error-message{
     text-align: center;
     background-color: blue; 
     color: white;
