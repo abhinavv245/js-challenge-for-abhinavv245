@@ -174,7 +174,7 @@ function isValid(username){
 }
 
 function isEmail(email){
-    var expr = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+    var expr = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
     return expr.test(email);
 }
 
